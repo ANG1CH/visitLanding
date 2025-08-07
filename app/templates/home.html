@@ -99,6 +99,14 @@
 
         <section class="section contacts-section" id="contacts">
             <h2>Контакты</h2>
+            <h2 align="center">Напишите мне здесь</h2>
+            <form action="/contact" method="post" class="contact-form" style="margin-top:28px; display:flex; flex-direction:column; gap:14px; max-width:400px; margin-left:auto; margin-right:auto;">
+                <input type="text" name="name" placeholder="Ваше имя" required style="padding:10px; border-radius:8px; border:1px solid #232733; background:#181c22; color:#fff;">
+                <input type="text" name="email" placeholder="Телефон, Email или Telegram (@user)" required style="padding:10px; border-radius:8px; border:1px solid #232733; background:#181c22; color:#fff;">
+                <textarea name="message" placeholder="Сообщение" required rows="4" style="padding:10px; border-radius:8px; border:1px solid #232733; background:#181c22; color:#fff;"></textarea>
+                <button type="submit" style="background:linear-gradient(90deg,#f9d923 0%,#ff4e00 100%); color:#232733; border:none; border-radius:10px; padding:10px 0; font-weight:700; font-size:1.08rem; cursor:pointer;">Отправить</button>
+            </form>
+            
             <div class="contacts-list">
                 <a href="mailto:avdonichevanton@gmail.com">avdonichevanton@gmail.com</a>
                 <a href="https://t.me/anton_angich" target="_blank">Telegram</a>
