@@ -4,68 +4,110 @@
     <meta charset="UTF-8">
     <title>Антон Авдоничев │ Junior Python Dev</title>
     <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
-    <div class="card">
-        <div class="avatar"></div>
-        <h1>{{ name }}</h1>
-        <h2>{{ profession }}</h2>
-        <p>{{ about }}</p>
-        <button class="more-btn" onclick="openModal()">Подробнее обо мне</button>
-        <div class="contacts">
-            <a href="mailto:avdonichevanton@gmail.com">avdonichevanton@gmail.com</a>
-            <span> | </span>
-            <a href="https://t.me/anton_angich" target="_blank">Telegram</a>
-        </div>
-
-    <!-- Портфолио -->
-    <div class="portfolio">
-        <h2>Портфолио</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Urbanista</h3>
-                <p>Магазин одежды на Flask. <br> <a href="https://github.com/ANG1CH/Urbanista" target="_blank">GitHub</a></p>
+<body class="dark-bg">
+    <header class="hero">
+        <nav class="nav">
+            <a href="#about">Обо мне</a>
+            <a href="#skills">Навыки</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#education">Образование</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Антон Авдоничев</h1>
+                <h2>Junior Python Web Developer</h2>
+                <p>Python-разработчик, специализируюсь на создании веб-приложений и автоматизации. Открыт к новым интересным задачам и развитию в IT-команде.</p>
             </div>
-            <div class="project">
-                <h3>Войти в IT</h3>
-                <p>Сайт-лендинг с курсами по IT на Flask. <br> <a href="https://github.com/ANG1CH/logInIT" target="_blank">GitHub</a></p>
-            </div>
-            <div class="project">
-                <h3>сайт-визитка</h3>
-                <p>Этот сайт-визитка на FastAPI. <br> <a href="https://github.com/anton-angich/visitLanding" target="_blank">GitHub</a></p>
+            <div class="hero-photo">
+                <img src="https://ui-avatars.com/api/?name=Антон+Авдоничев&background=222b3a&color=fff&size=256" alt="avatar">
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- Модальное окно -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
+    <main>
+        <section class="section about-section" id="about">
             <h2>Обо мне</h2>
-            <ul>
-                <li><b>Образование:</b> Среднее-специальное: <a href="https://lesmeh.edu35.ru/">БПОУ ВО "ЧЛМТ"</a></li>
-                <li><b>Навыки:</b> Python, FastAPI, Flask, PostgreSQL, MySQL, Git</li>
-                <li><b>Интересы:</b> Веб-разработка, музыка</li>
-                <li><b>Языки:</b> Русский, English (A2)</li>
-            </ul>
-        </div>
-    </div>
+            <p>Я - Python Junior Web Developer. Разрабатываю веб‑сайты и приложения на Python (FastAPI, Flask), работал с Git, PostgreSQL, HTML и CSS. Ищу возможности для роста в области backend‑разработки.</p>
+        </section>
 
-    <script>
-        function openModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
-        function closeModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-        // Закрытие по клику вне окна
-        window.onclick = function(event) {
-            var modal = document.getElementById('modal');
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
-        }
-    </script>
-    </div>
+        <section class="section skills-section" id="skills">
+            <h2>Навыки</h2>
+            <div class="skills-table">
+                <div class="skills-left">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-name">FastAPI</div>
+                    <div class="skill-name">Flask</div>
+                    <div class="skill-name">PostgreSQL</div>
+                    <div class="skill-name">Git</div>
+                </div>
+                <div class="skills-right">
+                    <div class="bar"><div class="bar-inner" style="width: 70%;" data-percent="70%"></div></div>
+                    <div class="bar"><div class="bar-inner" style="width: 40%;" data-percent="40%"></div></div>
+                    <div class="bar"><div class="bar-inner" style="width: 90%;" data-percent="90%"></div></div>
+                    <div class="bar"><div class="bar-inner" style="width: 70%;" data-percent="70%"></div></div>
+                    <div class="bar"><div class="bar-inner" style="width: 55%;" data-percent="55%"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section portfolio-section" id="portfolio">
+            <h2>Портфолио</h2>
+            <div class="portfolio-list">
+                <div class="portfolio-card">
+                    <div class="portfolio-icon">
+                        <i class="fas fa-store fa-lg"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <a href="https://github.com/ANG1CH/Urbanista" class="portfolio-title" target="_blank">Urbanista</a>
+                        <div class="portfolio-desc">Магазин одежды на Flask.</div>
+                        <a class="portfolio-btn" href="https://github.com/ANG1CH/Urbanista" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-icon">
+                        <i class="fas fa-code fa-lg"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <a href="https://github.com/ANG1CH/logInIT" class="portfolio-title" target="_blank">Войти в IT</a>
+                        <div class="portfolio-desc">Сайт-лендинг с курсами по IT на Flask.</div>
+                        <a class="portfolio-btn" href="https://github.com/ANG1CH/logInIT" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-icon">
+                        <i class="fas fa-rocket fa-lg"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <a href="https://github.com/anton-angich/visitLanding" class="portfolio-title" target="_blank">сайт-визитка</a>
+                        <div class="portfolio-desc">Этот сайт-визитка на FastAPI.</div>
+                        <a class="portfolio-btn" href="https://github.com/anton-angich/visitLanding" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section education-section" id="education">
+            <h2>Образование</h2>
+            <ul class="education-list">
+                <li><b>2021–2025:</b> БПОУ ВО "ЧЛМТ", Информационные системы и программирование</li>
+            </ul>
+        </section>
+
+        <section class="section contacts-section" id="contacts">
+            <h2>Контакты</h2>
+            <div class="contacts-list">
+                <a href="mailto:avdonichevanton@gmail.com">avdonichevanton@gmail.com</a>
+                <a href="https://t.me/anton_angich" target="_blank">Telegram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>© 2025 Антон Авдоничев</div>
+    </footer>
 </body>
 </html>
