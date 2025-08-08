@@ -1,3 +1,231 @@
+/* Стили для формы обратной связи */
+.contact-form {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1.5px solid #232733;
+    background: #181c22;
+    color: #fff;
+    font-size: 1.15rem;
+}
+.contact-form button {
+    background: linear-gradient(90deg, #f9d923 0%, #ff4e00 100%);
+    color: #232733;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 0;
+    font-weight: 700;
+    font-size: 1.18rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.18s;
+    box-shadow: 0 2px 12px #ff4e0033, 0 1.5px 0 #fff2 inset;
+    position: relative;
+    overflow: hidden;
+}
+.contact-form button:hover {
+    background: linear-gradient(90deg, #ff4e00 0%, #f9d923 100%);
+    color: #fff;
+    box-shadow: 0 4px 24px #ff4e0088, 0 1.5px 0 #fff2 inset;
+    transform: translateY(-2px) scale(1.04);
+}
+.contact-form button:active {
+    transform: scale(0.97);
+    box-shadow: 0 1px 4px #ff4e0033;
+}
+@media (max-width: 600px) {
+    .skill-row {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 22px;
+    }
+    .skill-name {
+        font-size: 1.35rem;
+        margin-bottom: 2px;
+    }
+    .bar {
+        width: 100%;
+        height: 32px;
+        border-radius: 14px;
+    }
+    .bar-inner {
+        font-size: 1.18rem;
+        border-radius: 14px 0 0 14px;
+        padding-right: 18px;
+    }
+    .bar-inner::after {
+        font-size: 1.13rem;
+        right: 10px;
+    }
+    .skills-table {
+        gap: 0;
+    }
+    html, body {
+        font-size: 18px;
+    }
+    .section {
+        padding: 14px 2vw 10px 2vw;
+        border-radius: 12px;
+        max-width: 96vw;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .hero-content {
+        gap: 12px;
+    }
+    .portfolio-list {
+        max-width: 96vw;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .hero-text h2 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    .hero-text p {
+        font-size: 1rem;
+        margin-bottom: 14px;
+    }
+    .hero-photo img {
+        width: 90px;
+        height: 90px;
+    }
+    .skills-left {
+        gap: 10px;
+        min-width: 80px;
+    }
+    .education-list {
+        font-size: 1.5rem;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 2vw 8px 2vw;
+        max-width: 96vw;
+        margin: 0 auto;
+        box-sizing: border-box;
+        align-items: flex-start;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1.6rem;
+    }
+    .skills-left, .skills-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 6px;
+        min-width: 0;
+    }
+    .bar {
+        width: 100%;
+    }
+
+    /* Hero */
+    .hero-content {
+        gap: 14px;
+        padding: 16px 4vw 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-text h1 {
+        font-size: clamp(1.6rem, 6vw, 2.2rem);
+        margin-bottom: 8px;
+    }
+    .hero-text h2 {
+        font-size: clamp(1rem, 4vw, 1.3rem);
+        margin-bottom: 8px;
+    }
+    .hero-photo img {
+        width: 110px;
+        height: 110px;
+    }
+
+    /* Skills */
+    .bar {
+        height: 30px;
+        border-radius: 16px;
+    }
+    .bar-inner {
+        font-size: clamp(0.9rem, 3.5vw, 1rem);
+        padding-right: 14px;
+        border-radius: 16px 0 0 16px;
+    }
+
+    /* Форма обратной связи — умеренный размер */
+    .contact-form {
+        max-width: 96vw;
+        gap: 12px;
+        padding: 4px 0;
+        box-sizing: border-box;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        font-size: clamp(1rem, 3.5vw, 1.3rem);
+        padding: 12px;
+        border-radius: 10px;
+    }
+    .contact-form button {
+        font-size: clamp(1rem, 3.5vw, 1.3rem);
+        padding: 12px 0;
+        border-radius: 12px;
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 1.15rem;
+        padding: 24px 0;
+    }
+}
+.bg-icons .move1 {
+    animation: move1 8s ease-in-out infinite alternate;
+}
+.bg-icons .move2 {
+    animation: move2 10s ease-in-out infinite alternate;
+}
+.bg-icons .move3 {
+    animation: move3 12s ease-in-out infinite alternate;
+}
+.bg-icons .move4 {
+    animation: move4 9s ease-in-out infinite alternate;
+}
+.bg-icons .move5 {
+    animation: move5 11s ease-in-out infinite alternate;
+}
+@keyframes move1 {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(40px) scale(1.08); }
+}
+@keyframes move2 {
+    0% { transform: translateX(0) scale(1); }
+    100% { transform: translateX(-36px) scale(1.12); }
+}
+@keyframes move3 {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-32px) scale(0.93); }
+}
+@keyframes move4 {
+    0% { transform: translateX(0) scale(1); }
+    100% { transform: translateX(28px) scale(1.07); }
+}
+@keyframes move5 {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(22px) scale(1.11); }
+}
 body, .dark-bg {
     font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     background: #181c22;
@@ -11,6 +239,44 @@ body, .dark-bg {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+}
+
+body::before, body::after {
+    content: '';
+    position: fixed;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.18;
+    transition: opacity 0.3s;
+}
+body::before {
+    left: -120px;
+    top: -120px;
+    width: 340px;
+    height: 340px;
+    background: radial-gradient(circle at 60% 40%, #ffd54f 0%, #ff4e00 80%, transparent 100%);
+    border-radius: 50%;
+}
+body::after {
+    right: -100px;
+    bottom: -100px;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle at 40% 60%, #00cfff 0%, #232733 80%, transparent 100%);
+    border-radius: 50%;
+}
+
+/* SVG-иконки на фоне */
+.bg-icons {
+    position: fixed;
+    z-index: 0;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    pointer-events: none;
+    opacity: 0.13;
+}
+/* Отступ между формой и контактами */
+.contacts-list {
+    margin-top: 28px;
 }
 
 .section {
